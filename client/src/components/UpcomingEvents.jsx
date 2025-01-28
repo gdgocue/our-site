@@ -23,7 +23,7 @@ export default function GDSCSlider() {
   const fetchEvents = async () => {
     setIsLoading(true)
     try {
-      const response = await axios.get("https://our-site-backend.vercel.app/upcomingevent/getupcomingevents", {
+      const response = await axios.get("https://our-site-server.vercel.app/upcomingevent/getupcomingevents", {
         headers: {
           "Cache-Control": "no-cache",
           Pragma: "no-cache",
@@ -72,7 +72,7 @@ export default function GDSCSlider() {
   const handleDeleteEvent = async (eventId) => {
     setIsDeleting(true)
     try {
-      await axios.delete(`https://our-site-backend.vercel.app/upcomingevent/deletevent/${eventId}`, {
+      await axios.delete(`https://our-site-server.vercel.app/upcomingevent/deletevent/${eventId}`, {
         headers: {
           "Cache-Control": "no-cache",
           Pragma: "no-cache",

@@ -19,7 +19,7 @@ const PastEvents = () => {
   const fetchEvents = async () => {
     setIsLoading(true)
     try {
-      const response = await axios.get("https://our-site-backend.vercel.app/upcomingevent/getpastevents", {
+      const response = await axios.get("https://our-site-server.vercel.app/upcomingevent/getpastevents", {
         headers: {
           "Cache-Control": "no-cache",
           Pragma: "no-cache",
