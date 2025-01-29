@@ -155,7 +155,7 @@ export default function AboutSection() {
               </form>
             </CardContent>
             <CardFooter className="flex justify-center">
-              <Link href={`mailto:zain9175zain@gmail.com?subject=Regarding: ${formData.Regarding}&body=${formData.message}`}>
+              <Link href={`mailto:gdsc@ue.edu.pk?subject=Regarding: ${formData.Regarding}&body=${formData.message}`}>
                 <Button className="bg-blue-500 hover:bg-blue-600" size="lg">
                   Send Message
                 </Button>
