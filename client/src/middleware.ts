@@ -1,7 +1,7 @@
 import { clerkMiddleware, createRouteMatcher } from "@clerk/nextjs/server";
 
 // Define a matcher for public routes
-const isPublicRoute = createRouteMatcher(['/']);
+const isPublicRoute = createRouteMatcher(['/','/gallery/:id']);
 
 // Middleware to protect routes
 export default clerkMiddleware(async (auth, req) => {
